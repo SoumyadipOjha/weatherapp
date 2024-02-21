@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <center>
+   
         <div class="wrapper">
             <header>WEATHER APP</header>
             <div class="mian_container">
                 <div class="search">
                     <input type="text" id="city" placeholder="city name">
-                    <!-- <button >submit</button> -->
+                    <!-- //<button >submit</button> -->
                     <button class="button-86" id="btn" role="button">Submit</button>
                 </div>
                 <div class="con">
                     <h1 id="country">country</h1>
                     <img id="country_icon" src="location.png">
                 </div>
-                <div>
-                    <h2 id="description">weather type</h2>
+                <div class="text-[100px] ">
+                    <h2 id="description" class="uppercase font-[900] mt-3 ">weather type</h2>
                 </div>
                 <div class="description_icons">
                     <div class="type-image"><img id="description_icon" src="cloud.png">
@@ -52,7 +53,7 @@
                 </div>
             </div>
         </div>
-    </center>
+    
 </body>
 <script src="index.js"></script>
 

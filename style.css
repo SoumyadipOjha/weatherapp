@@ -176,8 +176,13 @@ output {
   font-weight: bold;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 400px) {
+  body{
+    padding: 13%;
+  }
+  #country{
+    padding-left: 50px;
+  }
   header {
     font-size: 30px;
   }
@@ -197,13 +202,12 @@ output {
     font-size: 14px;
   }
 
-  .features {
-    padding: 10px;
+  .features,
+  .feature {
+    padding: 10px 15px;
+    flex-direction: column;
   }
 
-  .feature {
-    padding: 15px;
-  }
 
   .feature img {
     width: 40px;

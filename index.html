@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div class="wrapper">
+            <header>WEATHER APP</header>
+            <div class="mian_container">
+                <div class="search">
+                    <input type="text" id="city" placeholder="city name">
+                    <!-- <button >submit</button> -->
+                    <button class="button-86" id="btn" role="button">Submit</button>
+                </div>
+                <div class="con">
+                    <h1 id="country">country</h1>
+                    <img id="country_icon" src="location.png">
+                </div>
+                <div>
+                    <h2 id="description">weather type</h2>
+                </div>
+                <div class="description_icons">
+                    <div class="type-image"><img id="description_icon" src="cloud.png">
+                    </div>
+                </div>
+                <output>
+                    <h1 id="temperature">00.00°C</h1>
+
+                </output>
+                <div class="features">
+                    <div class="feature" id="humidity">
+                        <img src="hail.png">
+                        <p>humidity</p>
+                        <p id="humidity_result"></p>
+                    </div>
+                    <div class="feature" id="wind">
+                        <img src="wind.png">
+                        <p>wind</p>
+                        <p id="wind_result"></p>
+                    </div>
+                    <div class="feature" id="cloud">
+                        <img src="cloud-computing.png">
+                        <p>cloud</p>
+                        <p id="cloud_result"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+<script src="index.js"></script>
+
+</html>

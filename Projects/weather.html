@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div> <input type="text" id="input">
+        <button onclick="find()">Submit</button>
+        <br>
+        <output id="temp">
+    </div>
+</body>
+<script>
+    let res;
+    function find() {
+        const input = document.getElementById('input');
+        const city = input.value;
+
+        const url = `https://open-weather13.p.rapidapi.com/city/${city}`;
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'fef93e0117msh2c96991107f59b4p1fb309jsn5804230510a6',
+                'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
+            }
+        };
+
+
+        const weather = async () => {
+            try {
+                const response = await fetch(url, options);
+                const result = await response.text();
+                res = (JSON.parse(result));
+                console.log(JSON.parse(res));
+                document.getElementById('temp').value = (res.main.temp - 32) * 5 / 9;
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        weather();
+    }
+
+</script>
+
+</html>

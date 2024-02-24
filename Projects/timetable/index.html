@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="shortcut icon" type="image/jpg" href="beauty.png"/>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 80px;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+
+        <tr>
+            <td>Timming</td>
+            <td class="monday">Monday</td>
+            <td class="Tuesday">Tuesday</td>
+            <td class="wednesday">Wednesday</td>
+            <td class="thursday">Thursday</td>
+            <td class="friday">Friday</td>
+            <td>Saturday</td>
+
+        </tr>
+
+        <tbody>
+            <tr>
+                <td>09-10 AM</td>
+                <td class="monday">Practical / G:0 C:INT222 / R: 36-502 / S:K22WD</td>
+                <td class="Tuesday"></td>
+                <td class="wednesday"></td>
+                <td class="thursday"></td>
+                <td class="friday"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10-11 AM</td>
+                <td class="monday"> Practical / G:0 C:INT222 / R: 36-502 / S:K22WD</td>
+                <td class="Tuesday"></td>
+                <td class="wednesday"></td>
+                <td class="thursday"> Lecture / G:All C:PEA305 / R: 33-508 / S:K22WD</td>
+                <td class="friday"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11-12 AM</td>
+                <td class="monday"> </td>
+                <td class="Tuesday"> Lecture / G:All C:MTH302 / R: 33-605 / S:K22WD</td>
+                <td class="wednesday"> Lecture / G:All C:PEA305 / R: 33-508 / S:K22WD</td>
+                <td class="thursday"></td>
+                <td class="friday">Lecture / G:All C:PEA305 / R: 38-812 / S:K22WD</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>12-01 PM</td>
+                <td class="monday"> Lecture / G:All C:CSE408 / R: 36-502 / S:K22WD</td>
+                <td class="Tuesday"></td>
+                <td class="wednesday"></td>
+                <td class="thursday">ecture / G:All C:INT426 / R: 36-501 / S:K22WD</td>
+                <td class="friday"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>01-02 PM</td>
+                <td class="monday"> Tutorial / G:2 C:PEA305 / R: 33-509 / S:K22WD</td>
+                <td class="Tuesday">Lecture / G:All C:INT219 / R: 36-502 / S:K22WD</td>
+                <td class="wednesday">Lecture / G:All C:INT222 / R: 36-501 / S:K22WD</td>
+                <td class="thursday"> Lecture / G:All C:MTH302 / R: 33-605 / S:K22WD</td>
+                <td class="friday"> Practical / G:0 C:INT219 / R: 36-502 / S:K22WD</td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>02-03 PM</td>
+                <td class="monday"></td>
+                <td class="Tuesday"> Lecture / G:All C:INT219 / R: 36-502 / S:K22WD</td>
+                <td class="wednesday"> Lecture / G:All C:INT222 / R: 36-501 / S:K22WD</td>
+                <td class="thursday"></td>
+                <td class="friday">Practical / G:0 C:INT219 / R: 36-502 / S:K22WD</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>07-08 PM</td>
+                <td class="monday"></td>
+                <td class="Tuesday"></td>
+                <td class="wednesday"></td>
+                <td class="thursday">Lecture / G:All C:CSE310 / R: 34-407 / S:KS007</td>
+                <td class="friday"> Practical / G:2 C:CSE310 / R: 34-407 / S:KS007</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    08-09 PM</td>
+                <td class="monday"></td>
+                <td class="Tuesday"></td>
+                <td class="wednesday"> Lecture / G:All C:CSE310 / R: 34-407 / S:KS007</td>
+                <td class="thursday">Lecture / G:All C:CSE310 / R: 34-407 / S:KS007</td>
+                <td class="friday"> Practical / G:2 C:CSE310 / R: 34-407 / S:KS007</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+<script>
+    var date = new Date();
+    var day = date.getDay();
+    var hour = date.getHours();
+    let days = ["sunday", "monday", "Tuesday", "wednesday", "thursday", "friday", "saturday"];
+    let hours = {
+        1: 9,
+        2: 10,
+        3: 11,
+        4: 12,
+        5: 13,
+        6: 14,
+        7: 19,
+        8: 20,
+    }
+    // alert(hour);
+    // if (days[day] == ) {
+    //     var ele = document.getElementsByClassName("Tuesday");
+
+    //     for (let i = 0; i < 9; i++) {
+    //         ele[i].style.backgroundColor = "yellow";
+    //         ele[i].style.boxShadow = "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset";
+
+
+    //     }
+    // }
+    // if(day == 2 && hour ==14){
+    //     if(hour==14){
+    //             ele[6].style.backgroundColor = "red";
+    //         ele[i].style.boxShadow = "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset";
+    //         }
+    // }
+    for (let i = 0; i <= 8; i++) {
+        if (hours[i] === hour) {
+            var ele = document.getElementsByClassName(days[day])[i];
+            ele.style.backgroundColor = "red";
+            ele.style.color="white";
+            ele.style.boxShadow = "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset";
+            continue;
+        }
+        var ele = document.getElementsByClassName(days[day])[i];
+        ele.style.backgroundColor = "yellow";
+        ele.style.boxShadow = "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset";
+    }
+
+</script>
+
+
+</html>

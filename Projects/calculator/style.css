@@ -1,0 +1,37 @@
+body {
+    background-color: #e6e3e6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #display {
+    height: 100px;
+    width: 205px;
+    margin-bottom: 2px;
+    background-color: #232223;
+    color: #f9f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    border-radius: 5px;
+  }
+
+  button {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: sans-serif;
+
+  }
+
+  #operation {
+    background-color: rgb(222, 148, 83);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+
+  }
